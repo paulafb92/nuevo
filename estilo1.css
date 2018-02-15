@@ -1,0 +1,150 @@
+h1{
+    background-color:green;
+    text-align: center;
+    color: red;
+}
+
+.derecha{
+    text-align: right;
+}
+
+#tercerparrafo{
+    color:blue;
+    background-color:yellow;
+}
+
+#cuartoparrafo{
+    text-align: center;
+}
+
+footer{
+    color:white;
+    background-color: red;
+    border: 1px groove black;
+    clear: both;
+}
+
+aside{
+    color:white;
+    background-color: blue;
+    float:left;
+    width: 20%;
+}
+
+section{
+    float: left;
+    width: 80%;
+}
+
+nav{
+    background-color: pink;
+}
+
+nav ul{
+    background-color: purple;
+    width: 50%;
+}
+
+nav ul li{
+    background-color: orange;
+    width: 30%;
+    display: inline;
+    border: 3px double #16F79A;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px #333333;
+
+}
+
+nav ul li:hover {
+    background-color:yellow;
+    cursor:hand;
+}
+
+.imgflor{
+    border: 5px dotted black;
+}
+
+label{
+    width: 100%;
+    float: left;
+    margin: 5px;
+    color: #9FE607;
+    background-color: #30A147;
+}
+
+input{
+    width: 100%;
+  /*  float: left;*/
+}
+
+input[type="submit"]{
+    width: 20%;
+    margin: 20px;
+    border-radius: 20px;
+    float: right;
+}
+input[type="reset"]{
+    width: 10%;
+    border-radius: 50px;
+    margin: auto auto;
+    clear: both;
+}
+input[type="file"]{
+    clear: both;
+}
+select{
+    width: 40%;
+    float: left;
+}
+fieldset{
+    border: double 5px blue;
+    background-color: #7B9AAB; 
+}
+legend{
+    font-family: fantasy;
+    font-size: 20px;
+    color: #E116A4;
+}
+
+.mapa{
+    border: 2px solid #1072AB;
+}
+
+
+.estoyaqui{
+    background-color: yellow;
+    }
+    
+@keyframes movimiento-diagonal{
+	from{left:0px}
+	to{left:500px}
+}
+.textoanimado{
+    color:#1280B3;
+	animation-name:movimiento-diagonal;
+	animation-duration:5s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	position:relative
+}
+
+@keyframes movimiento-vertical{
+	from{top:0px}
+	to{top:100px}
+}
+    
+.videoanimado{
+    animation-name:movimiento-vertical;
+	animation-duration:5s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	position:relative
+}
+
+/*Esto es para movil*/
+@media only screen and (max-width:500px){
+    section{width:100%}
+    aside{width: 100%}
+}

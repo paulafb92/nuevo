@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+		<meta charset="utf-8">
+		<title>WEB</title>
+		<meta name="description" content="Aquí irá la descripción de mi página web">
+		<link rel="stylesheet" href="estilo1.css">
+		<link rel="SHORTCUT ICON" href="img/favicon.png">	
+	</head>
+	<body>
+		<header>
+			<h1>PRUEBA DE WEB</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index1.html">Opción 1</a></li>
+				<li ><a href="contacto.html">Opción 2</a></li>
+				<li class="estoyaqui"><a href="formulario.html">Opción 3</a></li>
+			</ul>
+		</nav>
+		<section>
+			<form name="miformulario" id="miformulario" method="post" enctype="multipart/form-data">
+			<fieldset><legend>DATOS PERSONALES</legend>
+				<label>Nombre</label>
+				<input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+				<label>Email</label>
+				<input type="email" name="miemail" id="miemail" placeholder="Email" multiple>
+				<label>Codigo postal</label>
+				<input pattern="[0-9] {5}" name="codigopostal" id="codigopostal" title="inserte su codigo postal" placeholder="Codigo postal">
+				<label>DNI</label>
+				<input pattern="[0-9]{8}[a-zA-Z]{1}" name="DNI" id="DNI" title="inserte su DNI" placeholder="DNI">
+				<label>Numero</label>
+				<input type="number" name="numero" id="numero" placeholder="Numero" min=”0” max=”100” step="5">
+				<label>Fecha</label>
+				<input type="date" name="fecha" id="fecha">
+				<label>Telefono</label>
+				<input type="tel" name="telefono" id="telefono" list="informacion">
+				<label>Color</label>
+				<input type="color" name="micolor" id="micolor">
+				<label>Provincia</label>
+				<select name="Provincia" required>
+					<option value="">Elige provincia</option>
+					<option value="La Rioja">La Rioja</option>
+					<option value="Madrid">Madrid</option>
+					<option value="Toledo">Toledo</option>
+				</select>
+				<label>Localidades</label>
+				<select name="Localidades"  multiple required>
+					<option value="Olias">Olias del Rey</option>
+					<option value="Bargas">Bargas</option>
+					<option value="Arges">Arges</option>
+					<option value="Sonseca">Sonseca</option>
+				</select>
+				<label>Sube un archivo</label>
+				<input type="file" name="archivo">
+				<label>Sexo</label>
+					<label><input type="radio" value="hombre" name="sexo" >Hombre</label>
+					<label><input type="radio" value="mujer" name="sexo">Mujer</label>
+				<label>Aficiones</label>
+					<label><input type="checkbox" value="deportes" name="aficiones">Deportes </label>
+					<label><input type="checkbox" value="cine" name="aficiones">Cine </label>
+					<label><input type="checkbox" value="informatica" name="aficiones" >Informatica </label>
+				<center><input type="reset" value="borrar"></center>
+				<label><input type="checkbox" name="Condiciones" required checked>He leido y acepto las condiciones legales</label>
+				<input type="submit" value="Enviar">
+			</fieldset>
+			</form>
+			<datalist name="telefono" id="informacion">
+				<option value="123123123" label="Teléfono 1">
+				<option value="456456456" label="Teléfono 2">
+			</datalist>
+		</section>
+		<aside>	
+		</aside>
+		<footer>
+			<p>Desarrollado por Paula</p>
+		</footer>	
+	</body>
+    </html>
